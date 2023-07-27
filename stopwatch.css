@@ -15,18 +15,24 @@ Stopwatch Button {
     min-width: 15;
 }
 
-.start {
+#start {
     dock: left;
+    display: block;
 }
 
-.stop {
-    dock: left;
-}
-
-.reset {
-    dock: right;
-}
-
-.hidden {
+.started #start {
     display: none;
+}
+
+#stop {
+    dock: left;
+    display: none;
+}
+
+.started #stop {
+    display: block;
+}
+
+#reset {
+    dock: right;
 }
