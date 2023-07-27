@@ -11,19 +11,22 @@ Stopwatch TimeDisplay {
     text-opacity: 60%;
 }
 
-Button {
-    min-width: 11;
+Stopwatch Button {
+    min-width: 15;
 }
 
-#start {
+.start {
     dock: left;
 }
 
-#stop {
+.stop {
     dock: left;
-    display: None;
 }
 
-#reset {
+.reset {
     dock: right;
+}
+
+.hidden {
+    display: none;
 }

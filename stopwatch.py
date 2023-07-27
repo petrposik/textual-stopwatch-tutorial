@@ -13,9 +13,9 @@ class Stopwatch(Static):
     """Custom Stopwatch widget"""
 
     def compose(self) -> ComposeResult:
-        yield Button("Start", id="start", variant="success")
-        yield Button("Stop", id="stop", variant="error")
-        yield Button("Reset", id="reset")
+        yield Button("Start", classes="start", variant="success")
+        yield Button("Stop", classes="stop hidden", variant="error")
+        yield Button("Reset", classes="reset")
         yield TimeDisplay("00:00:00.00", id="time_display")
 
 
